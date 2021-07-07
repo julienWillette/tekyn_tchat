@@ -10,10 +10,10 @@ require 'index.php';
             <input type="text" name="username" placeholder="Username" autocomplete="off" class="username">
         </span>
         <span>
-            <a href="#">Créer un compte</a>
+            <a href="#" class="create-account">Créer un compte</a>
         </span>
         <span>
-            <input class="btn-username" type="submit" value="Validé">
+            <input type="submit" value="Validé" class="btn-login">
         </span>
     </form>
 </div>

@@ -16,6 +16,10 @@ h1 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* login_page */
 
 .div-login {
@@ -35,7 +39,7 @@ h2 {
     padding-top: 55px;
 }
 
-.picture {
+form span {
     display: block;
     text-align: center;
 }
@@ -54,18 +58,18 @@ h2 {
     padding-left: 30px;
 }
 
-span a {
+.create-account {
     color: var(--title);
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
     font-size: 30px;
 }
 
-span a:hover {
+.create-account:hover {
     text-decoration-line: underline;
 }
 
-.btn-username {
+.btn-login {
     background: var(--vert_clair);
     width: 300px;
     height: 50px;
@@ -78,6 +82,10 @@ span a:hover {
     cursor: pointer;
 }
 
+.btn-login:hover {
+    background: var(--bleu_très_foncé);
+    color: var(--title);
+}
 /* page tchat */
 
 #tchat-page {
@@ -146,12 +154,15 @@ article {
 article:hover {
     cursor: pointer;
     background: var(--bleu_très_foncé);
+
 }
 
+/*
 article:focus {
     cursor: pointer;
     background: var(--bleu_très_foncé);
 }
+*/
 
 .picture {
     width: 30%;
@@ -341,4 +352,10 @@ h4 {
     outline: none;
     font-size: 30px;
     color: var(--bleu_message);
+    cursor: pointer;
+}
+
+.btn-message:hover {
+    color: var(--bleu_très_foncé);
+    background: var(--bleu_message);
 }
