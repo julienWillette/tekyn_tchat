@@ -257,6 +257,16 @@ h4 {
     margin-right: auto;
     margin-top: 30px;
     display: block;
+    overflow: scroll;
+
+}
+
+.midle-tchat::-webkit-scrollbar {
+    display: none;
+}
+
+.midle-tchat::-webkit-scrollbar-thumb {
+    display: none;
 }
 
 .line-tchat {
