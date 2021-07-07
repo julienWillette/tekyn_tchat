@@ -1,3 +1,4 @@
+<?php $h1 = 'Tekyn_tchat' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../public/asset/style.css">
-    <title>tekyn_tchat</title>
+
+    <title>
+        <?php if (isset($title)) : ?>
+            <?= $title; ?>
+        <?php else: ?>
+            Mon site
+        <?php endif ?>
+    </title>
+
 </head>
 <body>
-    <h1>Tekyn_tchat</h1>
+    <h1><?= $h1 ?></h1>
 </body>
 </html>

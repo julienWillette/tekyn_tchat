@@ -1,9 +1,16 @@
-<?php require 'index.php'; ?>
+<?php
+$title = "Page login";
+require 'index.php';
+?>
+
+<pre>
+    <?php var_dump($_GET) ?>
+</pre>
 
 <div class="div-login">
     <h2>Enter your username</h2>
     <form>
-        <span method="post">
+        <span action="login_page.php" method="GET">
             <input type="text" name="username" placeholder="Username" autocomplete="off">
         </span>
         <span>
