@@ -7,7 +7,7 @@ require 'index.php';
     <h2>Enter your username</h2>
     <form>
         <span action="login_page.php" method="GET">
-            <input type="text" name="username" placeholder="Username" autocomplete="off">
+            <input type="text" name="username" placeholder="Username" autocomplete="off" class="username">
         </span>
         <span>
             <a href="#">Créer un compte</a>

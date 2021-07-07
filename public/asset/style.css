@@ -40,7 +40,7 @@ span {
     text-align: center;
 }
 
-span input[type=text] {
+.username {
     background: var(--bleu_très_foncé);
     width: 400px;
     height: 50px;
@@ -84,18 +84,113 @@ span input[type=submit] {
     display: flex;
 }
 
+/* tchat */
+
+.tchat {
+    width: 70%;
+    height: 800px;
+    background: #16E116;
+    border-radius: 50px;
+    margin: 50px 50px 50px 25px;
+}
+
+/* sidebar */
+
 .sidbar {
     width: 30%;
-    height: 1000px;
-    background: red;
+    height: 800px;
+    background: var(--bleu_moyen);
     border-radius: 50px;
     margin: 50px 25px 50px 50px;
 }
 
-.tchat {
+.all-cards {
+    width: 100%;
+    height: 80%;
+    margin-top: 185px;
+    background: var(--bleu_moyen);
+    border-radius: 0 0 50px 50px;
+    overflow: scroll;
+}
+
+.all-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.all-cards::-webkit-scrollbar-thumb {
+    background-color: var(--bleu_très_foncé);
+    display: none;
+}
+
+.search-form {
+    width: 26%;
+    height: 20%;
+    background: var(--bleu_moyen);
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+}
+
+.search {
+    background: var(--bleu_très_foncé);
     width: 70%;
-    height: 1000px;
-    background: #16E116;
-    border-radius: 50px;
-    margin: 50px 50px 50px 25px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 30px;
+    color: var(--title);
+    font-family: 'Varela Round', sans-serif;
+    padding-left: 30px;
+    margin-top: 16%;
+}
+
+article {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    cursor: pointer;
+    background: var(--bleu_moyen_foncé);
+}
+
+article:hover {
+    cursor: pointer;
+    background: var(--bleu_très_foncé);
+}
+
+article:focus {
+    cursor: pointer;
+    background: var(--bleu_très_foncé);
+}
+
+.picture {
+    width: 30%;
+    height: 100%;
+}
+
+.status {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    background: #FF0000;
+}
+
+.name {
+    width: 70%;
+    height: 100%;
+}
+
+img {
+    width: 81%;
+    height: 60%;
+    border-radius: 65px;
+    margin-top: 32px;
+}
+
+h3 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: var(--title);
+    text-align: center;
+    margin-top: 58px;
 }
