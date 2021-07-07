@@ -13,7 +13,7 @@ require 'index.php';
             <a href="#">Créer un compte</a>
         </span>
         <span>
-            <input type="submit" value="Validé">
+            <input class="btn-username" type="submit" value="Validé">
         </span>
     </form>
 </div>
