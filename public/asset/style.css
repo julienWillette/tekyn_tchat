@@ -1,3 +1,79 @@
+@import 'colors.css';
+
+/* Body */
+
+body {
+    margin: 0;
+    background: var(--bleu_clair);
+    width: 100%;
+    height: 100%;
+}
+
 h1 {
-    color: red;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 74px;
+    color: var(--title);
+    text-align: center;
+}
+
+/* login_page */
+
+.div-login {
+    width: 1000px;
+    height: 400px;
+    background: var(--bleu_moyen);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 34px;
+    color: var(--title);
+    text-align: center;
+    padding-top: 55px;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+span input[type=text] {
+    background: var(--bleu_très_foncé);
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 30px;
+    color: var(--bleu_message);
+    padding-left: 30px;
+}
+
+span a {
+    color: var(--title);
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+}
+
+span a:hover {
+    text-decoration-line: underline;
+}
+
+span input[type=submit] {
+    background: var(--vert_clair);
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 30px;
+    color: var(--black);
+    margin-top: 45px;
+    cursor: pointer;
 }
