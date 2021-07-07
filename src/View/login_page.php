@@ -3,10 +3,6 @@ $title = "Page login";
 require 'index.php';
 ?>
 
-<pre>
-    <?php var_dump($_GET) ?>
-</pre>
-
 <div class="div-login">
     <h2>Enter your username</h2>
     <form>

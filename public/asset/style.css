@@ -77,3 +77,25 @@ span input[type=submit] {
     margin-top: 45px;
     cursor: pointer;
 }
+
+/* page tchat */
+
+#tchat-page {
+    display: flex;
+}
+
+.sidbar {
+    width: 30%;
+    height: 1000px;
+    background: red;
+    border-radius: 50px;
+    margin: 50px 25px 50px 50px;
+}
+
+.tchat {
+    width: 70%;
+    height: 1000px;
+    background: #16E116;
+    border-radius: 50px;
+    margin: 50px 50px 50px 25px;
+}
