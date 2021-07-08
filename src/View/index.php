@@ -1,4 +1,8 @@
-<?php $h1 = 'Tekyn_tchat' ?>
+<?php
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR  . 'Controller' . DIRECTORY_SEPARATOR . 'auth.php';
+$h1 = 'Tekyn_tchat';
+$_SESSION['role'] = 'user';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +24,14 @@
 
 </head>
 <body>
+    <ul>
+        <li><a href="login.php">login</a></li>
+        <li><a href="tchat.php">tchat</a></li>
+        <?php if (is_connected()): ?>
+            <a href="/src/View/logout.php">Se déconnecter</a>
+        <?php endif; ?>
+    </ul>
     <h1><?= $h1 ?></h1>
+
 </body>
 </html>
