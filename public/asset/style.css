@@ -216,6 +216,7 @@ article:focus {
     height: 60%;
     border-radius: 65px;
     margin-top: 32px;
+    margin-left: 20%;
 }
 
 h3 {
@@ -224,7 +225,7 @@ h3 {
     font-size: 30px;
     color: var(--title);
     text-align: center;
-    margin-top: 58px;
+    margin-top: 70px;
 }
 
 /* tchat */
