@@ -3,6 +3,40 @@ $title = "tchat";
 require_once 'index.php';
 require_once '../Controller/auth.php';
 user_not_connect();
+
+$users = [
+    [
+        'username' => 'Florence',
+        'firstname' => 'Florence',
+        'lastname' => 'Hale',
+        'picture' => 'Florence_Hale.jpg'
+    ],
+    [
+        'username' => 'Eva',
+        'firstname' => 'Eva',
+        'lastname' => 'Bryant',
+        'picture' => 'Eva_Bryant.jpg'
+    ],
+    [
+        'username' => 'Krin',
+        'firstname' => 'Krin',
+        'lastname' => 'Hall',
+        'picture' => 'Krin_Hall.jpg'
+    ],
+    [
+        'username' => 'Owen',
+        'firstname' => 'Owen',
+        'lastname' => 'Lambert',
+        'picture' => 'Owen_Lambert.jpg'
+    ],
+    [
+        'username' => 'Lorraine',
+        'firstname' => 'Lorraine',
+        'lastname' => 'Kelley',
+        'picture' => 'Lorraine_Kelley.jpg'
+    ],
+];
+
 ?>
 
 <span id="tchat-page">
@@ -11,56 +45,18 @@ user_not_connect();
             <input type="search" placeholder="Search.." class="search">
         </form>
         <div class="all-cards">
+            <?php foreach ($users as $user): ?>
             <a href="#" class="card">
                 <article>
                     <span class="picture">
-                        <img class="img-sidebar" src="../../public/images/Florence%20Hale.jpg" alt="Florence_Hale">
+                        <img class="img-sidebar" src="../../public/images/<?= $user['picture']?>" alt="Florence_Hale">
                     </span>
                     <span class="name">
-                        <h3>Florence Hale</h3>
+                        <h3><?= $user['firstname'] . ' ' . $user['lastname']?></h3>
                     </span>
                 </article>
             </a>
-            <a href="#" class="card">
-                <article>
-                    <span class="picture">
-                        <img class="img-sidebar" src="../../public/images/Florence%20Hale.jpg" alt="Florence_Hale">
-                    </span>
-                    <span class="name">
-                        <h3>Florence Hale</h3>
-                    </span>
-                </article>
-            </a>
-            <a href="#" class="card">
-                <article>
-                    <span class="picture">
-                        <img class="img-sidebar" src="../../public/images/Florence%20Hale.jpg" alt="Florence_Hale">
-                    </span>
-                    <span class="name">
-                        <h3>Florence Hale</h3>
-                    </span>
-                </article>
-            </a>
-            <a href="#" class="card">
-                <article>
-                    <span class="picture">
-                        <img class="img-sidebar" src="../../public/images/Florence%20Hale.jpg" alt="Florence_Hale">
-                    </span>
-                    <span class="name">
-                        <h3>Florence Hale</h3>
-                    </span>
-                </article>
-            </a>
-            <a href="#" class="card">
-                <article>
-                    <span class="picture">
-                        <img class="img-sidebar" src="../../public/images/Florence%20Hale.jpg" alt="Florence_Hale">
-                    </span>
-                    <span class="name">
-                        <h3>Florence Hale</h3>
-                    </span>
-                </article>
-            </a>
+            <?php endforeach ?>
         </div>
     </div>
     <div class="tchat">
