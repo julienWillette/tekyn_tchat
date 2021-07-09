@@ -55,7 +55,7 @@
     {
         data=text.value.trim()
         if(data!="")
-            chatbox.innerHTML+='<div class="eachmessage sent animated"><p>'+data+'</p></div>'
+            chatbox.innerHTML+='<span class="line-tchat-2"><div class="color-send-message-2"><p>'+data+'</p></div><img src="../../public/images/Florence_Hale.jpg" alt="Florence_Hale" class="img-tchat-2"></span>'
         text.value=""
         chatbox.scrollTop=chatbox.scrollHeight
     }
