@@ -41,6 +41,54 @@ $users = [
         'picture' => 'Lorraine_Kelley.jpg',
         'is_connected' => true
     ],
+    [
+        'id' => 6,
+        'username' => 'Kristin',
+        'firstname' => 'Kristin',
+        'lastname' => 'Burns',
+        'picture' => 'Kristin_Burns.jpg',
+        'is_connected' => true
+    ],
+    [
+        'id' => 7,
+        'username' => 'Leon',
+        'firstname' => 'Leon',
+        'lastname' => 'Wallace',
+        'picture' => 'Leon_Wallace.jpg',
+        'is_connected' => false
+    ],
+    [
+        'id' => 8,
+        'username' => 'Melinda',
+        'firstname' => 'Melinda',
+        'lastname' => 'Phillips',
+        'picture' => 'Melinda_Phillips.jpg',
+        'is_connected' => true
+    ],
+    [
+        'id' => 9,
+        'username' => 'Ramon',
+        'firstname' => 'Ramon',
+        'lastname' => 'Sanchez',
+        'picture' => 'Ramon_Sanchez.jpg',
+        'is_connected' => true
+    ],
+    [
+        'id' => 10,
+        'username' => 'Wendy',
+        'firstname' => 'Wendy',
+        'lastname' => 'Walker',
+        'picture' => 'Wendy_Walker.jpg',
+        'is_connected' => false
+    ],
+    [
+        'id' => 11,
+        'username' => 'Zoey',
+        'firstname' => 'Zoey',
+        'lastname' => 'Diaz',
+        'picture' => 'Zoey_Diaz.jpg',
+        'is_connected' => true
+    ],
 ];
 
 function is_connected (): bool
