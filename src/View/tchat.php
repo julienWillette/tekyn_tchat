@@ -1,7 +1,10 @@
 <?php
 $title = "tchat";
-require 'index.php';
+require_once 'index.php';
+require_once '../Controller/auth.php';
+user_not_connect();
 ?>
+
 <span id="tchat-page">
     <div class="sidbar">
         <form class="search-form" method="POST" action="tchat.php">
