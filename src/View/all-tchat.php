@@ -35,7 +35,7 @@
                     </div>
                 </span>
                 <div class="date-send-1">
-                    <p>11:11am Today</p>
+                    <p >11:11am Today</p>
                 </div>
             </div>
         </span>
@@ -49,14 +49,18 @@
     submit=document.querySelector(".submit");
     text=document.querySelector(".sendbox input");
     chatbox=document.querySelector(".midle-tchat");
-    submit.addEventListener("click",sendmessage)
+    submit.addEventListener("click",sendmessage);
 
     function sendmessage()
     {
         data=text.value.trim()
+        var timestamp = Date.now();
+        var date = new Date(timestamp);
         if(data!="")
             chatbox.innerHTML+='<span class="line-tchat-2"><div class="color-send-message-2"><p>'+data+'</p></div><img src="../../public/images/Florence_Hale.jpg" alt="Florence_Hale" class="img-tchat-2"></span>'
+            chatbox.innerHTML+='<div class="date-send-2"><p>'+date+'</p></div>'
         text.value=""
         chatbox.scrollTop=chatbox.scrollHeight
     }
 </script>
+
