@@ -1,5 +1,5 @@
 <?php
-$error = null;
+
 if (!empty($_POST['username'])) {
     if($_POST['username'] === 'juju94') {
         session_start();
@@ -11,16 +11,14 @@ if (!empty($_POST['username'])) {
 }
 
 require_once '../Controller/auth.php';
-if (is_connected()) {
-    header('Location: /src/View/tchat.php');
-    exit();
-}
+user_connect ();
+
 $title = "Login";
 require_once 'index.php';
 ?>
 
 <?php if ($error): ?>
-<div><?= $error ?></div>
+<div class="username_error"><?= $error ?></div>
 <?php endif; ?>
 
 <div class="div-login">

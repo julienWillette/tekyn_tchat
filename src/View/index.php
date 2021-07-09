@@ -24,14 +24,16 @@ $_SESSION['role'] = 'user';
 
 </head>
 <body>
-    <ul>
-        <li><a href="login.php">login</a></li>
-        <li><a href="tchat.php">tchat</a></li>
+
+    <span>
         <?php if (is_connected()): ?>
-            <a href="/src/View/logout.php">Se déconnecter</a>
+            <a href="/src/View/logout.php" class="disconnection">Se déconnecter -></a>
         <?php endif; ?>
-    </ul>
-    <h1><?= $h1 ?></h1>
+    </span>
+    <span class="all-index">
+        <h1><?= $h1 ?></h1>
+    </span>
+
 
 </body>
 </html>

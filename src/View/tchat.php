@@ -2,7 +2,7 @@
 $title = "tchat";
 require_once 'index.php';
 require_once '../Controller/auth.php';
-user_connect();
+user_not_connect();
 ?>
 
 <span id="tchat-page">
