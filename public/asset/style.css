@@ -383,7 +383,7 @@ h4 {
     margin-left: 3%;
 }
 
-.btn-message {
+.submit {
     background: var(--bleu_très_foncé);
     width: 10%;
     height: 122px;
@@ -398,7 +398,7 @@ h4 {
     cursor: pointer;
 }
 
-.btn-message:hover {
+.submit:hover {
     color: var(--bleu_très_foncé);
     background: var(--bleu_message);
 }
