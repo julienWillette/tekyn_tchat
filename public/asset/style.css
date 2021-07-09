@@ -199,17 +199,25 @@ article:focus {
     height: 100%;
 }
 
-/*
-.status {
+.status-0 {
     border-radius: 50%;
     width: 12px;
     height: 12px;
     border: 1px solid white;
-    background: #FF0000;
-    margin-left: 75%;
-    margin-bottom: 50px;
+    background: var(--rouge_déconnecté);
+    margin-top: 123px;
+    margin-left: -25px;
 }
-*/
+
+.status-1 {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    background: var(--vert_connecté);
+    margin-top: 123px;
+    margin-left: -25px;
+}
 
 .img-sidebar {
     width: 81%;

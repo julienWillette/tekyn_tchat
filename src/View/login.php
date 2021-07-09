@@ -1,20 +1,21 @@
 <?php
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR  . 'Controller' . DIRECTORY_SEPARATOR . 'auth.php';
+user_connect ();
+$title = "Login";
+require_once 'index.php';
 
-if (!empty($_POST['username'])) {
-    if($_POST['username'] === 'juju94') {
-        session_start();
-        $_SESSION['connecte'] =1;
-        header('Location: /src/View/tchat.php');
-    } else {
-        $error = "username incorrect";
+foreach ($users as $key => $user){
+    if (!empty($_POST['username'])) {
+        if($_POST['username'] === 'juju') {
+            session_start();
+            $_SESSION['connecte'] =1;
+            header('Location: /src/View/tchat.php');
+        } else {
+            $error = "username incorrect";
+        }
     }
 }
 
-require_once '../Controller/auth.php';
-user_connect ();
-
-$title = "Login";
-require_once 'index.php';
 ?>
 
 <?php if ($error): ?>
