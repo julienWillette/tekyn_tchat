@@ -1,4 +1,5 @@
 <?php
+use Models\UsersModel;
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR  . 'Controller' . DIRECTORY_SEPARATOR . 'auth.php';
 $h1 = 'Tekyn_chat';
 $_SESSION['role'] = 'user';
@@ -24,6 +25,19 @@ $_SESSION['role'] = 'user';
 
 </head>
 <body>
+
+<pre>
+    <?php var_dump($users); ?>
+    <ul>
+        <?php foreach($users as $u): ?>
+            <li><?= $u['id'] ?></li>
+            <li><?= $u['username'] ?></li>
+            <li><?= $u['firstname'] ?></li>
+            <li><?= $u['lastname'] ?></li>
+            <li><?= $u['picture'] ?></li>
+        <?php endforeach; ?>
+    </ul>
+</pre>
 
     <span>
         <?php if (is_connected()): ?>

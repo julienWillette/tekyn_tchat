@@ -1,5 +1,5 @@
 <?php
-
+/*
 $users = [
     [
         'id' => 1,
@@ -35,7 +35,7 @@ $users = [
     ],
     [
         'id' => 5,
-        'username' => 'juju94',
+        'username' => 'Lorraine',
         'firstname' => 'Lorraine',
         'lastname' => 'Kelley',
         'picture' => 'Lorraine_Kelley.jpg',
@@ -90,6 +90,8 @@ $users = [
         'is_connected' => true
     ],
 ];
+
+*/
 
 function is_connected (): bool
 {
