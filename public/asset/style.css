@@ -9,11 +9,23 @@ body {
     height: 100%;
 }
 
+
 h1 {
     font-family: 'Varela Round', sans-serif;
     font-size: 74px;
     color: var(--title);
     text-align: center;
+}
+
+.disconnection {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    color: var(--title);
+    margin-top: 2%;
+    margin-right: 2%;
+
 }
 
 a {
@@ -57,6 +69,18 @@ form span {
     color: var(--bleu_message);
     padding-left: 30px;
 }
+
+
+.username_error {
+    color: var(--title);
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    background: var(--rouge_déconnecté);
+}
+
 
 .create-account {
     color: var(--title);
@@ -175,23 +199,32 @@ article:focus {
     height: 100%;
 }
 
-/*
-.status {
+.status-0 {
     border-radius: 50%;
     width: 12px;
     height: 12px;
     border: 1px solid white;
-    background: #FF0000;
-    margin-left: 75%;
-    margin-bottom: 50px;
+    background: var(--rouge_déconnecté);
+    margin-top: 123px;
+    margin-left: -25px;
 }
-*/
+
+.status-1 {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    background: var(--vert_connecté);
+    margin-top: 123px;
+    margin-left: -25px;
+}
 
 .img-sidebar {
     width: 81%;
     height: 60%;
     border-radius: 65px;
     margin-top: 32px;
+    margin-left: 20%;
 }
 
 h3 {
@@ -200,7 +233,7 @@ h3 {
     font-size: 30px;
     color: var(--title);
     text-align: center;
-    margin-top: 58px;
+    margin-top: 70px;
 }
 
 /* tchat */
@@ -312,6 +345,7 @@ h4 {
     height: 18%;
     border-radius: 60px;
     float: right;
+    margin-top: 20px;
 }
 
 .color-send-message-2{
@@ -323,6 +357,8 @@ h4 {
     font-family: 'Varela Round', sans-serif;
     padding-left: 5%;
     font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .date-send-2 {
@@ -350,7 +386,7 @@ h4 {
     margin-left: 3%;
 }
 
-.btn-message {
+.submit {
     background: var(--bleu_très_foncé);
     width: 10%;
     height: 122px;
@@ -365,7 +401,7 @@ h4 {
     cursor: pointer;
 }
 
-.btn-message:hover {
+.submit:hover {
     color: var(--bleu_très_foncé);
     background: var(--bleu_message);
 }
