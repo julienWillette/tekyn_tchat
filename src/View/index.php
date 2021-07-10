@@ -1,6 +1,6 @@
 <?php
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR  . 'Controller' . DIRECTORY_SEPARATOR . 'auth.php';
-$h1 = 'Tekyn_tchat';
+$h1 = 'Tekyn_chat';
 $_SESSION['role'] = 'user';
 ?>
 <!DOCTYPE html>
