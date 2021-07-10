@@ -4,7 +4,6 @@ user_connect ();
 $title = "Login";
 require_once 'index.php';
 
-foreach ($users as $key => $user){
     if (!empty($_POST['username'])) {
         if($_POST['username'] === 'juju') {
             session_start();
@@ -14,7 +13,6 @@ foreach ($users as $key => $user){
             $error = "username incorrect";
         }
     }
-}
 
 ?>
 
