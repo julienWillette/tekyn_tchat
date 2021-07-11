@@ -1,8 +1,8 @@
 <?php
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR  . 'Controller' . DIRECTORY_SEPARATOR . 'auth.php';
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR  . 'Controller' . DIRECTORY_SEPARATOR . 'AuthController.php';
 user_connect ();
 $title = "Login";
-require_once 'index.php';
+require_once '../../index.php';
 
     if (!empty($_POST['username'])) {
         if($_POST['username'] === 'juju') {

@@ -1,6 +1,11 @@
 <?php
-use Models\UsersModel;
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR  . 'Controller' . DIRECTORY_SEPARATOR . 'auth.php';
+use App\Autoloader;
+use App\Models\UsersModel;
+
+Autoloader::register();
+
+$users = new UsersModel;
+
 $h1 = 'Tekyn_chat';
 $_SESSION['role'] = 'user';
 ?>
@@ -13,7 +18,7 @@ $_SESSION['role'] = 'user';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../public/asset/style.css">
+    <link rel="stylesheet" href="public/asset/style.css">
 
     <title>
         <?php if (isset($title)) : ?>
@@ -27,7 +32,6 @@ $_SESSION['role'] = 'user';
 <body>
 
 <pre>
-    <?php var_dump($users); ?>
     <ul>
         <?php foreach($users as $u): ?>
             <li><?= $u['id'] ?></li>
