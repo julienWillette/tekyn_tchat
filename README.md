@@ -20,7 +20,7 @@ http://localhost:8000/src/View/login.php
 
 5 tester:
 
-http://localhost:8000/src/View/chat.php 
+http://localhost:8000/src/View/tchat.php 
 
 Pas possible d'y avoir accès tant que l'utilisateur n'est pas connecté
 
