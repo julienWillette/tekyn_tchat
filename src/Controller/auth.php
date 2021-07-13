@@ -91,6 +91,7 @@ $users = [
     ],
 ];
 
+
 function is_connected (): bool
 {
     if (session_status() === PHP_SESSION_NONE) {
@@ -114,3 +115,20 @@ function user_connect () : void
         exit();
     }
 }
+
+function login()
+{
+    if (!empty($_POST['username'])) {
+        if($_POST['username'] === 'cyril') {
+            session_start();
+            $_SESSION['connecte'] =1;
+            header('Location: /src/View/tchat.php');
+        } else {
+            $error = "username incorrect";
+        }
+    }
+    return $error;
+}
+
+
+
