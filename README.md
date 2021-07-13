@@ -23,7 +23,7 @@ Pas possible d'y avoir accès tant que l'utilisateur n'est pas connecté
 
 un message d'erreur apparait: username incorrect
 
-7 rentrer le username: juju
+7 rentrer le username: cyril
 
 8 tester 
 http://localhost:8000/src/View/login.php
