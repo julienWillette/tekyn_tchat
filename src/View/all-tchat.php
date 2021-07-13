@@ -38,7 +38,9 @@
         data=text.value.trim()
         var timestamp = Date.now();
         var date = new Date(timestamp);
-        if(data!="")
+        if(data=="")
+            submit.addEventListener(hiden)
+        else
             chatbox.innerHTML+='<span class="line-tchat-2"><div class="color-send-message-2"><p>'+data+'</p></div><img src="../../public/images/Florence_Hale.jpg" alt="Florence_Hale" class="img-tchat-2"></span>'
         chatbox.innerHTML+='<div class="date-send-2"><p>'+date+'</p></div>'
         text.value=""
