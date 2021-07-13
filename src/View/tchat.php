@@ -5,8 +5,13 @@ user_not_connect();
 ?>
 
 <span id="tchat-page">
-    <?php require_once'./sidebar.php' ?>
+    <?php require 'sidebar.php'?>
 
-    <?php require_once'./all-tchat.php' ?>
+    <?php require'all-tchat.php' ?>
 </span>
+
+
+
+
+
 

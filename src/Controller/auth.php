@@ -91,6 +91,7 @@ $users = [
     ],
 ];
 
+
 function is_connected (): bool
 {
     if (session_status() === PHP_SESSION_NONE) {
