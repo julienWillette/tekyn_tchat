@@ -40,6 +40,9 @@ Pas possible d'aller sur la page login tant que l'on est pas déconnecté
 
 le message s'envoie et apparait sur le chat sans refresh .
 
+si il n'y a rien d'écrit dans la barre pour taper le message, 
+il ne se passera rien quand on appuie sur validé  
+
 10 cliquer sur se déconnecter pour retourner à la page login. 
 
 
