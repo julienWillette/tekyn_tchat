@@ -17,7 +17,7 @@
                     </div>
                 </span>
                 <div class="date-send-1">
-                    <p>11:11am Today</p>
+                    <p>Tue Jul 13 2021 11:23:44 GMT+0200 (heure d’été d’Europe centrale)</p>
                 </div>
             </div>
         </span>
@@ -41,7 +41,7 @@
         if(data=="")
             submit.addEventListener(hiden)
         else
-            chatbox.innerHTML+='<span class="line-tchat-2"><div class="color-send-message-2"><p>'+data+'</p></div><img src="../../public/images/Florence_Hale.jpg" alt="Florence_Hale" class="img-tchat-2"></span>'
+            chatbox.innerHTML+='<span class="line-tchat-2"><div class="color-send-message-2"><p>'+data+'</p></div><img src="../../public/images/Owen_Lambert.jpg" alt="Florence_Hale" class="img-tchat-2"></span>'
         chatbox.innerHTML+='<div class="date-send-2"><p>'+date+'</p></div>'
         text.value=""
         chatbox.scrollTop=chatbox.scrollHeight

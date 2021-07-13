@@ -4,7 +4,7 @@
     </form>
     <div class="all-cards">
         <?php foreach ($users as $id => $user): ?>
-            <a href="/src/View/tchat.php/<?php $user['id'] ?>" class="card">
+            <a href="#" class="card">
                 <article>
                     <span class="picture">
                         <img class="img-sidebar" src="../../public/images/<?= $user['picture']?>" alt="Florence_Hale">
