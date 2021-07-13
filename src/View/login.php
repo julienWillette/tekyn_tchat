@@ -6,7 +6,7 @@ require_once 'index.php';
 
 foreach ($users as $key => $user){
     if (!empty($_POST['username'])) {
-        if($_POST['username'] === 'juju') {
+        if($_POST['username'] === 'cyril') {
             session_start();
             $_SESSION['connecte'] =1;
             header('Location: /src/View/tchat.php');
